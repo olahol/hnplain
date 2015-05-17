@@ -1,6 +1,17 @@
 # hnplain
 > output Hacker News in plain text
 
+## Use case
+
+Send an email to yourself at lunch time with the top ten stories on
+Hacker News including the top comment for those stories.
+
+```bash
+$ crontab -l
+MAILTO="me@example.com"
+00 13 * * * DISPLAY=:0 hnplain -n 10 --topcomment
+```
+
 ## Example
 
 ```bash

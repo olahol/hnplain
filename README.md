@@ -6,7 +6,7 @@
 Send an email to yourself at lunch time with the top ten stories on
 Hacker News including the top comment for those stories.
 
-```bash
+```shell
 $ crontab -l
 MAILTO="me@example.com"
 00 13 * * * DISPLAY=:0 hnplain -n 10 --topcomment
@@ -14,7 +14,7 @@ MAILTO="me@example.com"
 
 ## Example
 
-```bash
+```shell
 $ hnplain -n 5 --list show --topcomment
 1. Show HN: Temple.io – Read, annotate, and search popular religious texts
 ==========================================================================
@@ -65,7 +65,7 @@ watmough 2015-05-17 01:59:49
 
 ## Documentation
 
-```bash
+```shell
 $ hnplain --help
 usage: hnplain [-h] [--list {ask,new,top,job,show}] [-n N] [--topcomment]
 
